@@ -1,0 +1,17 @@
+# Weekly Founder Ops Report — configuration
+
+metric_columns:
+  revenue: "revenue"          # column name in CSV
+  active_users: "active_users"
+  new_signups: "signups"
+  churn: "churn"
+
+anomaly:
+  revenue_drop_pct: -0.20     # flag if revenue down >20% vs prior week
+  revenue_spike_pct: 0.50     # flag if revenue up >50%
+  signups_drop_pct: -0.30
+
+weekly_summary:
+  title: "Weekly Ops Memo"
+  sections: ["Summary", "Metrics", "Anomalies", "Action Items"]
+  currency: "INR"

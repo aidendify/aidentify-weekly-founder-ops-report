@@ -1,0 +1,24 @@
+{
+  "slug": "weekly-founder-ops-report",
+  "title": "Weekly Founder Ops Report Agent",
+  "type": "agent_pack",
+  "price_inr": 1499,
+  "required_files": [
+    "README.md",
+    "LICENSE.txt",
+    "config.example.yaml",
+    "skills/metrics-intake.SKILL.md",
+    "skills/narrative-writer.SKILL.md",
+    "skills/anomaly-flagger.SKILL.md",
+    "skills/action-extractor.SKILL.md",
+    "prompts/weekly-memo.md",
+    "scripts/validate_pack.py",
+    "scripts/sample_memo.py",
+    "_data/metrics.csv",
+    "_data/weekly-memo-sample.md",
+    "docs/00-overview.md",
+    "docs/01-metrics-schema.md",
+    "docs/02-anomaly-playbook.md",
+    "examples/two-week-comparison.md"
+  ]
+}
