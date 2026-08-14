@@ -1,0 +1,48 @@
+{
+  "slug": "weekly-founder-ops-report",
+  "title": "Weekly Founder Ops Report Agent",
+  "tagline": "Stop guessing. Turn your scattered metrics CSVs into a board-ready weekly ops memo in ~10 minutes \u2014 ",
+  "created_at": "2026-08-13T09:31:08Z",
+  "specs": {
+    "thumbnail": {
+      "path": "/opt/data/aidentify/products/weekly-founder-ops-report/gumroad-assets/thumbnail-600.png",
+      "size": [
+        600,
+        600
+      ],
+      "use": "Gumroad product thumbnail / icon"
+    },
+    "cover": {
+      "path": "/opt/data/aidentify/products/weekly-founder-ops-report/gumroad-assets/cover-1280x720.png",
+      "size": [
+        1280,
+        720
+      ],
+      "use": "Gumroad product cover / banner (16:9)"
+    }
+  },
+  "public_urls": {
+    "cover": "https://raw.githubusercontent.com/aidendify/aidentify-weekly-founder-ops-report/main/gumroad-assets/cover-1280x720.png",
+    "thumbnail": "https://raw.githubusercontent.com/aidendify/aidentify-weekly-founder-ops-report/main/gumroad-assets/thumbnail-600.png"
+  },
+  "upload_notes": [
+    "Generate \u2192 git push gumroad-assets/ \u2192 API upload with public raw URLs",
+    "POST /products/:id/covers url=<cover>",
+    "POST /products/:id/thumbnail url=<thumb>",
+    "Fallback: Gumroad UI Cover + Thumbnail upload",
+    "Avoid # $ + & ; : % in filenames (Gumroad known issue)"
+  ],
+  "upload_result": {
+    "cover": {
+      "success": false,
+      "message": "Cover must be an image (JPEG, PNG, GIF) or a video.",
+      "main_cover_id": null,
+      "covers": null
+    },
+    "thumbnail": {
+      "success": false,
+      "message": "Could not process your thumbnail, please try again.",
+      "thumbnail": null
+    }
+  }
+}
